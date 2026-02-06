@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+
+/* Make contentEditable feel like a real editor */
+[contenteditable="true"] {
+  caret-color: #1a73e8;
+}
+
+/* Subtle selection tint like Docs */
+::selection {
+  background: rgba(26, 115, 232, 0.25);
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
+  font-size: 20px;
+  line-height: 1;
+}
